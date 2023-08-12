@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="08/15/21||18:14:21" using="Simscape Multibody Link Version 7.0" from="SolidWorks 28.1.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Ensamblaje1" uid="Ensamblaje1" version="190">
+<AssemblyFile name="Ensamblaje1.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="segmento 4-1" uid="segmento 4-1" entityUid="segmento 4*:*Default">
+<Transform>
+<Rotation>0.95829036208027851 -0.28487163857017783 0.022972406978604525 0.058621715022290535 0.27459690572825052 0.9597708236304725 -0.27971963905291675 -0.91839244819565691 0.27984323223064322</Rotation>
+<Translation>0.56429414942108269 0.034519694786760084 0.20483655390598135</Translation>
+</Transform>
+</Instance>
+<Instance name="Base-1" uid="Base-1" grounded="true" entityUid="Base*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="segmento 2-1" uid="segmento 2-1" entityUid="segmento 2*:*Default">
+<Transform>
+<Rotation>0.99223331973835827 0.10837355272900114 -0.061059088348020492 0.060698115317632743 0.0066295600742981775 0.99813415317286325 0.10857613917378127 -0.99408813593268264 -7.0603245472256049e-16</Rotation>
+<Translation>0.24805832993458965 0.015174528829406463 0.29714403479344531</Translation>
+</Transform>
+</Instance>
+<Instance name="segmento 3-1" uid="segmento 3-1" entityUid="segmento 3*:*Default">
+<Transform>
+<Rotation>0.95829036208027929 -0.2791977250518991 -0.061059088348019881 0.058621715022291923 -0.017079426153606296 0.99813415317286303 -0.27971963905291375 -0.96008172752537457 1.8739736167824254e-15</Rotation>
+<Translation>0.47804801683385678 0.029243740434754882 0.23001132142074604</Translation>
+</Transform>
+</Instance>
+<Instance name="segmento1-1" uid="segmento1-1" entityUid="segmento1*:*Default">
+<Transform>
+<Rotation>0.99813415317286402 2.1419844523415814e-16 -0.06105908834800948 0.061059088348009494 -3.4826373013907525e-15 0.99813415317286391 0 -0.99999999999999989 -3.489217995423445e-15</Rotation>
+<Translation>0 0 0.26999999999999996</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concéntrica1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Base-1</Uid>
+</InstancePath>
+<Position>0 0 0.040000000000000001</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>segmento1-1</Uid>
+</InstancePath>
+<Position>0 0.2299999999999999 8.0304070793392063e-16</Position>
+<Axis>0 0.99999999999999989 3.4914813388431334e-15</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente6">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Base-1</Uid>
+</InstancePath>
+<Position>0 0 0.029999999999999999</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>segmento1-1</Uid>
+</InstancePath>
+<Position>0 0.23999999999999991 8.3795552132235189e-16</Position>
+<Axis>0 0.99999999999999989 3.4914813388431334e-15</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>segmento 2-1</Uid>
+</InstancePath>
+<Position>-0.25000000000000039 0 -0.050001999999998215</Position>
+<Axis>6.9861895860402639e-15 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>segmento1-1</Uid>
+</InstancePath>
+<Position>-1.0446022825749589e-16 -1.1102230246251565e-16 0.030000000000000034</Position>
+<Axis>3.4833247397614286e-15 3.4914813388431334e-15 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente7">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>segmento 2-1</Uid>
+</InstancePath>
+<Position>-0.21999999999999981 0.050000000000000017 0.030000000000001543</Position>
+<Axis>-6.9850884874115955e-15 -1.3907591911122378e-16 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>segmento1-1</Uid>
+</InstancePath>
+<Position>-0.025000000000000119 -1.1102230246251565e-16 0.029999999999999912</Position>
+<Axis>-4.1078251911130792e-15 -3.4914813388431334e-15 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica5">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>segmento 2-1</Uid>
+</InstancePath>
+<Position>-3.8857805861880479e-16 0 -0.049999999999999996</Position>
+<Axis>6.9845286263411789e-15 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>segmento 3-1</Uid>
+</InstancePath>
+<Position>-0.24000000000000032 0 -0.05000199999999827</Position>
+<Axis>6.9749529508245566e-15 0 0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente8">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>segmento 2-1</Uid>
+</InstancePath>
+<Position>1.6653345369377348e-16 0 0.030000000000000009</Position>
+<Axis>6.9807262381770387e-15 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>segmento 3-1</Uid>
+</InstancePath>
+<Position>-0.2099999999999998 0.0500000000000001 0.030000000000001456</Position>
+<Axis>-6.9775277959234548e-15 -1.4160216128251012e-16 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica6">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>segmento 3-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 -1.6653345369377348e-16 -6.9912363421226001e-15</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>segmento 4-1</Uid>
+</InstancePath>
+<Position>-0.039999999999999869 0 1.3877787807814457e-16</Position>
+<Axis>-1.0000000000000002 0 3.4972025275692431e-15</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente9">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>segmento 3-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 -1.6653345369377348e-16 -6.9912363421226001e-15</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>segmento 4-1</Uid>
+</InstancePath>
+<Position>-0.089999999999999858 0 3.0531133177191805e-16</Position>
+<Axis>-1.0000000000000002 0 3.4972025275692431e-15</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Base" uid="Base*:*Default" version="370">
+<ModelUnits mass="kilogram" length="centimeter"/>
+<PartFile name="Base.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1.3249087385212341</Mass>
+<CenterOfMass>0 0 0.015074099270063123</CenterOfMass>
+<Inertia>0.0045011888744824957 0.0054251888744824986 0.0097243834951969733 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Base_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.37647058823529411" g="0.37647058823529411" b="0.37647058823529411" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="segmento 2" uid="segmento 2*:*Default" version="546">
+<ModelUnits mass="kilogram" length="centimeter"/>
+<PartFile name="segmento 2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1.2234786214062583</Mass>
+<CenterOfMass>-0.14623445859925555 -1.3485338292705276e-07 5.080323661375772e-09</CenterOfMass>
+<Inertia>0.0012019929416462358 0.0077966422198374715 0.007631573445472167 6.8704125499222372e-10 -6.0500799181704687e-10 1.5202108032719014e-08</Inertia>
+</MassProperties>
+<GeometryFile name="segmento 2_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.37647058823529411" g="0.37647058823529411" b="0.37647058823529411" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="segmento 3" uid="segmento 3*:*Default" version="488">
+<ModelUnits mass="kilogram" length="centimeter"/>
+<PartFile name="segmento 3.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1.2097913501732886</Mass>
+<CenterOfMass>-0.14198520497162306 0 9.9159873477939466e-16</CenterOfMass>
+<Inertia>0.0012052306905090816 0.0062772556401090003 0.0061159703963616944 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="segmento 3_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.37647058823529411" g="0.37647058823529411" b="0.37647058823529411" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="segmento 4" uid="segmento 4*:*Default" version="387">
+<ModelUnits mass="kilogram" length="centimeter"/>
+<PartFile name="segmento 4.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.074131853071795858</Mass>
+<CenterOfMass>-0.058459289362018177 0 0</CenterOfMass>
+<Inertia>1.3292228947692509e-05 3.8880685959878953e-05 3.8853210959878956e-05 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="segmento 4_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.37647058823529411" g="0.37647058823529411" b="0.37647058823529411" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="segmento1" uid="segmento1*:*Default" version="601">
+<ModelUnits mass="kilogram" length="centimeter"/>
+<PartFile name="segmento1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.86069191862002892</Mass>
+<CenterOfMass>9.408758311028745e-11 0.14472447715467879 5.0743956471396801e-16</CenterOfMass>
+<Inertia>0.0052091417044142349 0.00062905727973506869 0.0052016274213579506 0 -7.5622323531395052e-11 3.7772879358981448e-11</Inertia>
+</MassProperties>
+<GeometryFile name="segmento1_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.37647058823529411" g="0.37647058823529411" b="0.37647058823529411" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
